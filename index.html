@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+            <h2>Create Account</h2>
+            <br>
+     
+            <div class="form-control-feedback nombre">
+            <p>Nombre</p>
+            <input id="nombre" type="text"class="input">
+            <span id="icon" style="display:none" class="succes-icon"></span>
+            <span id="icon-error" style="display:none" class="error-icon"></span>
+            </div>
+            <p id="nameValidationResult"></p>
+            <br>
+
+            <p>Email</p>
+            <div class="form-group has-error has-feedback">
+                <input id="email" class="input" type="text">
+                <span id="iconEmail" style="display:none" class="succes-icon"> </span>
+                <span id="iconErrorEmail" style="display:none" class="error-icon"></span>
+            <p id="emailValidationResult"></p>
+            </div>
+            <br>
+            
+
+            <div class="form-control-feedback">
+            <p>Clave</p>
+            <input type="password" id="clave" class="input">
+            <span id="iconClave" style="display:none" class="succes-icon"></span>
+            <span id="iconErrorClave" style="display:none" class="error-icon"></span>
+            </div>
+            <p id="passValidationResult"></p>
+            <br>
+
+            <div class="form-control-feedback">
+            <p>Confirme su clave</p>
+            <input type="password" id="pass" class="input">
+            <span id="iconClave" style="display:none" class="succes-icon"></span>
+            <span id="iconErrorClave" style="display:none" class="error-icon"></span>
+            </div>
+            <p id="passRequeridValidationResult"></p>
+            <br>
+
+            
+            <input id="check" class="button" type="button" value="ENVIAR" onclick="enviarFormulario()">
+            
+        </form>
+    </div>
+    
+   
+</body>
+</html>
